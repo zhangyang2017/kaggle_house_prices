@@ -10,7 +10,7 @@ import pandas as pd
 import warnings
 warnings.filterwarnings('ignore')
 
-
+## Realized i need to clean both training data set and testing data set together. So starting over.
 #import data
 df_train = pd.read_csv('train.csv')
 df_test = pd.read_csv('test.csv')
