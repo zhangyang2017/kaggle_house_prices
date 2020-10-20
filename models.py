@@ -18,8 +18,8 @@ import warnings
 warnings.filterwarnings('ignore')
 
 
-df = pd.read_csv('train_transformed.csv')
-df = df.drop(['GarageAge', 'MasVnrArea'], axis = 1) ## need to check why there are Nan in those two variables after cleaning.
+df = pd.read_csv('train_cleaning.csv')
+
 
 ###############
 ### Scaling
