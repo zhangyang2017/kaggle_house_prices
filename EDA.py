@@ -28,6 +28,7 @@ print('The shape of testing set: ', df_test.shape[0], 'rows', 'and', df_test.sha
 trainrow = df_train.shape[0]
 testrow = df_test.shape[0]
 testids = df_test['Id'].copy()
+trainids = df_train['Id'].copy()
 y_train = df_train['SalePrice'].copy()
 
 X = pd.concat((df_train, df_test)).reset_index(drop=True)
@@ -800,13 +801,40 @@ ax[4][0].set_xticks([1,2,3,4,5,6,7,8,9,10,11,12])
 plt.tight_layout()
 ##interesting that summer months tend to sell more houses. but doesnt affect price. so drop.
 
+##make new features
+X['houseAge_fg'] = X['YrSold'] - X['YearBuilt']
+X['totBaths_fg'] = X['FullBath'] + X['BsmtFullBath'] +\
+    X['HalfBath']*0.5 + X['BsmtHalfBath']*0.5
+X['totFlrSF_fg'] = X['1stFlrSF'] + X['2ndFlrSF']
+X['totLot_fg'] = X['LotFrontage'] + X['LotArea']
+X['garageAge_fg'] = X['YrSold'] - X['GarageYrBlt']
+    
+dropVars = ['SaleCondition', 'SaleType', 'MoSold', 'MiscVal', 'PoolArea',\
+            'ScreenPorch', '3SsnPorch', 'EnclosedPorch', 'OpenPorchSF',\
+            'WoodDeckSF', 'GarageCond', 'GarageQual', 'GarageArea',\
+            'Fireplaces', 'Functional', 'KitchenAbvGr', 'BedroomAbvGr',\
+            'Electrical', 'Heating', 'HeatingQC', 'BsmtFinType2',\
+            'BsmtExposure', 'BsmtCond', 'Foundation', 'ExterCond',\
+            'ExterQual', 'MasVnrArea', 'MasVnrType', 'Exterior1st', \
+            'Exterior2nd', 'RoofMatl', 'RoofStyle', 'BldgType', \
+            'LandSlope', 'LotConfig', 'Utilities', 'LotShape', \
+            'Street', 'MSSubClass', 'MSZoning', 'YrSold', 'BsmtHalfBath',\
+            '1stFlrSF', '2ndFlrSF', 'BsmtFullBath', 'FullBath', 'HalfBath',\
+            'GarageYrBlt', 'YearBuilt']
 
-#lets split data using trainrow data and scale data
+X = X.drop(columns = dropVars)
 
+#split data back to test and train data sets
 X_train=X.iloc[:trainrow]
 X_test=X.iloc[trainrow:]
 
+X_train.insert(0, 'Id', trainids)
+X_train['SalePrice'] = y_train
+X_train.to_csv("train_cleaned.csv", index = False)
 
+
+X_test.insert(0, 'Id', df_test['Id'].values)
+X_test.to_csv('test_cleaned.csv', index = False)
 
 scaler=StandardScaler()
 scaler=scaler.fit(x_train)
