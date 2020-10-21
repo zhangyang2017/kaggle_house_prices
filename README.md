@@ -32,8 +32,9 @@ I ended up with a workflow like this:
 
 ## One more thought <a id="3"></a>
 I wonder which way is better:
- - going through each variable, studying their distributions and relationships with the target variable so that I can make the 'best' decision on feature selection;
- - or giving my model enough flexibility to pick up information on its own?
+ - 1. going through each variable, studying their distributions and relationships with the target variable so that I can make the 'best' decision on feature selection;
+ - 2. or, giving my model enough flexibility to pick up information on its own?
+ Does #1 lead to overfitting the model?
   
 ## Resources I used <a id="4"></a>
 
