@@ -12,7 +12,7 @@ This was my first Kaggle competition, and also my very first ML project. I did n
 
 In order to achieve my goal, the quickest way, I thought, was to study the public notebooks that people shared on Kaggle. I picked out three notebooks (which I listed towards the end) and went through every line of codes. From doing that, I learned how to do exploratory data analysis (EDA) using [pandas](https://pandas.pydata.org/), [numpy](https://numpy.org/) and [seaborn](https://seaborn.pydata.org/), how to do feature selection and feature engineering, and how to build traditional ML models using [scikit-learn](https://scikit-learn.org/stable/) and a more robust model using [xgboost](https://xgboost.readthedocs.io/en/latest/).
 
-After trying out a few different models, `XGBoost` gave me the best outcome. I eventually [scored at top 9%](https://www.kaggle.com/zhangyang2020/competitions). This was no where near perfect, but I decided it was good enough for me at the moment and it was time to move on to the next project. I do plan to come back to this later on after I gain more experience on ML and see if I can make my models any better :wink:.
+After trying out a few different models, `XGBoost` gave me the best outcome. I eventually [scored at top 9%](https://www.kaggle.com/zhangyang2020/competitions). This was no where near perfect, but I decided it was good enough for me at the moment and it was time to move on to the next project. I do plan to come back to this later on after I gain more experience on ML and see if I can make my models any better :wink:. For example, I completely ignored messing with outliers. That can be something to tweak next time around.
 
 Project duration: 2020/10/16 - 2020/10/20
 
