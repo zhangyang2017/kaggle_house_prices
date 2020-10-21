@@ -35,7 +35,7 @@ I wonder :thinking: which way is better:
  - 1. going through each variable, studying their distributions and relationships with the target variable so that I can make the 'best' decision on feature selection;
  - 2. or, giving my model enough flexibility to pick up information on its own?
  
- Does #1 lead to overfitting the model? :thinking:
+ Does either of them lead to overfitting the model? :thinking:
   
 ## Resources helped me learn <a id="4"></a>
 
