@@ -8,7 +8,7 @@ Table of contents
 
 
 ## Overview <a id="1"></a>
-This was my first Kaggle competition, and also my very first ML project. I did not have the knowledge of the tools I need, nor did I know how to even approach the problem, but I wanted to jump into the data right away. My goal here, for this project, was to learn how to use python tools to build ML models that can solve regression problems like this: predict house prices based on a bunch of collected housing parameters.
+This was my first Kaggle competition, and also my very first ML project. I did not have the knowledge of the tools I need, nor did I know how to even approach the problem, but I wanted to jump into the data right away. My goal here, for this project, was to learn how to use python tools to build ML models that can solve regression problems to predict a continuous outcome, in this case, the house sale prices.
 
 In order to achieve my goal, the quickest way, I thought, was to study the public notebooks that people shared on Kaggle. I picked out three notebooks (which I listed towards the end) and went through every line of codes. From doing that, I learned how to do exploratory data analysis (EDA) using [pandas](https://pandas.pydata.org/), [numpy](https://numpy.org/) and [seaborn](https://seaborn.pydata.org/), how to do feature selection and feature engineering, and how to build traditional ML models using [scikit-learn](https://scikit-learn.org/stable/) and a more robust model using [xgboost](https://xgboost.readthedocs.io/en/latest/).
 
