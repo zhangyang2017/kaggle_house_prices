@@ -14,7 +14,7 @@ In order to achieve my goal, the quickest way, I thought, was to study the publi
 
 After trying out a few different models, `XGBoost` gave me the best outcome. I eventually [scored at top 9%](https://www.kaggle.com/zhangyang2020/competitions). This was no where near perfect, but I decided it was good enough for me at the moment and it was time to move on to the next project. I do plan to come back to this later on after I gain more experience on ML and see if I can make my models any better :wink:.
 
-Project duration: 2020/10/16 - 2020/10/21
+Project duration: 2020/10/16 - 2020/10/20
 
 ## Workflow <a id="2"></a>
 I ended up with a workflow like this:
