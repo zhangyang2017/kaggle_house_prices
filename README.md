@@ -4,7 +4,7 @@ Table of contents
 - [Overview](#1)
 - [Workflow](#2)
 - [One more thought](#3)
-- [Resources helped me learn](#4)
+- [Resources that helped me learn](#4)
 
 
 ## Overview <a id="1"></a>
@@ -37,7 +37,7 @@ I wonder :thinking: which way is better:
  
  Does either of them lead to overfitting the model? :thinking:
   
-## Resources helped me learn <a id="4"></a>
+## Resources that helped me learn <a id="4"></a>
 
 1. [Comprehensive data exploration with Python](https://www.kaggle.com/pmarcelino/comprehensive-data-exploration-with-python) by Pedro Marcelino
 2. [Visualization + feature generation [House Prices]](https://www.kaggle.com/drsergio/visualization-feature-generation-house-prices) by Sergii Lutsanych
